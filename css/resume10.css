@@ -17,7 +17,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    padding-left: 240px;
+    padding-left: 260px;
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: #f3f3f3;
@@ -30,8 +30,22 @@ header {
     font-size: 0.75rem;
     font-weight: 500;
     line-height: 1.67;
-    height: 30px;
+    height: 30px;   
+    margin-right: 300px;
+}
+
+.btn-share i {
+    height: 10px;
+    margin-right: 6px;
     
+}
+
+.btn-share:hover {
+    box-shadow: 0px 15px 20px #eeeeee;
+    background-color: #FFC107;
+    color: #fff;
+    transform: translateY(-7px);
+
 }
 .btn-white {
     color: #0e0f0f;
@@ -42,7 +56,6 @@ header {
     text-align: center;
     vertical-align: middle;
     user-select: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .bi-share {
     height: 10px;
@@ -51,15 +64,15 @@ header {
     border-style: none;
 }
 .collapsible-nav.show {
-    width: 465px;
+    width: 400px;
 }
 .collapsible-nav {
     display: flex;
     align-items: center;
     overflow: hidden;
     margin-right: 10px;
-    transition: width 0.6s ease-in-out;
 }
+
 .collapsible-nav .nav-link.active {
     color: #FFC107;
     border-bottom: 2px solid #FFC107;
@@ -110,7 +123,7 @@ aside {
     width: 400px; 
 }
 aside .profile-img-wrapper img {
-    width: 50%;
+    width: 80%;
     margin: 0;
 }
 
@@ -284,6 +297,22 @@ main .time-line-item::before {
     box-shadow: none;
     text-align: right;
 }
+.progress-item .progress-percentage {
+    font-size: 10px;
+    background-color: #0e0f0f;
+    position: absolute;
+    top: 5px;
+    padding: 0 8px;
+    border-radius: 3px;
+}
+.progress-item .progress-percentage::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-top: 6px solid #313131;
+    border-right: 8px solid transparent;
+}
 
 .progress-bar {
     float: left;
@@ -303,4 +332,46 @@ main .expertise-card h5 {
 
 main .logo {
     width: 60%;
+}
+
+main .expertise-card:first-child {
+    border-right: 1px solid #f3f3f3;
+}
+
+main .expertise-card .expertise-icon i{
+    display: flex;
+    height: 100% !important;
+    margin-right: 18px;
+    align-items: left !important;
+    color: #FFC107 !important;
+}
+
+main .expertise-card h5 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+main .expertise-card p {
+    font-size: 10px;
+    font-weight: 300;
+    max-width: 180px;
+    margin-bottom: 0;
+}
+
+main .expertise-card {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+main .expertise-card:nth-child(3) {
+    border-right: 1px solid #f3f3f3;
+
+}
+
+form .btn-primary {
+    background-color: #FFC107!important;
+    border-color: #FFC107 !important;
+    color: #0e0f0f;
 }
